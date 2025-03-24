@@ -20,6 +20,7 @@ const initialState: TeamplatesState = {
   remainingTemplates: [],
 };
 
+
 export const uploadTemplate = createAsyncThunk(
   "uploadTemplate",
   async (payload: FormData, { rejectWithValue }) => {
