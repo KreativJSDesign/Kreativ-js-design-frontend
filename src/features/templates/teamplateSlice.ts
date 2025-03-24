@@ -24,7 +24,7 @@ export const uploadTemplate = createAsyncThunk(
   "uploadTemplate",
   async (payload: FormData, { rejectWithValue }) => {
     try {
-      const response = await ApiService.postData("/template/upload", payload);
+      const response = await ApiService.postData("template/upload", payload);
       if (response.data) {
         successMsg(response?.data?.message);
       }
@@ -39,7 +39,7 @@ export const getAllTemplates = createAsyncThunk(
   "getAllTemplates",
   async (_, { rejectWithValue }) => {
     try {
-      const response = await ApiService.getData("/template/all");
+      const response = await ApiService.getData("template/all");
       return response.data;
     } catch (error: any) {
       normalFailMsg(error.response?.data?.error || "Fail to get templates");
@@ -51,7 +51,7 @@ export const deleteTemplate = createAsyncThunk(
   "deleteTemplate",
   async (payload: { id: string }, { rejectWithValue }) => {
     try {
-      const response = await ApiService.postData(`/template/delete-template`, payload);
+      const response = await ApiService.postData(`template/delete-template`, payload);
       if (response.data) {
         successMsg(response?.data?.message);
       }
@@ -66,7 +66,7 @@ export const getTemplate = createAsyncThunk(
   "getTemplate",
   async (payload: { id: string }, { rejectWithValue }) => {
     try {
-      const response = await ApiService.getData(`/template/single-template/${payload?.id}`);
+      const response = await ApiService.getData(`template/single-template/${payload?.id}`);
       // if (response.data) {
       //   successMsg(response?.data?.message);
       // }
@@ -89,7 +89,7 @@ export const saveProductTeamplate = createAsyncThunk(
     { rejectWithValue }
   ) => {
     try {
-      const response = await ApiService.postData(`/template/selectedTemplate`, payload);
+      const response = await ApiService.postData(`template/selectedTemplate`, payload);
       if (response.data) {
         successMsg(response?.data?.message);
       }
