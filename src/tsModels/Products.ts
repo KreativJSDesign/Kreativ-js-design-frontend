@@ -1,0 +1,60 @@
+export interface Price {
+  amount: number;
+  divisor: number;
+  currency_code: string;
+}
+
+export interface SingleProductType {
+  listing_id: number;
+  user_id: number;
+  shop_id: number;
+  title: string;
+  description: string;
+  state: string;
+  creation_timestamp: number;
+  created_timestamp: number;
+  ending_timestamp: number;
+  original_creation_timestamp: number;
+  last_modified_timestamp: number;
+  updated_timestamp: number;
+  state_timestamp: number;
+  quantity: number;
+  shop_section_id: number;
+  featured_rank: number;
+  url: string;
+  num_favorers: number;
+  non_taxable: boolean;
+  is_taxable: boolean;
+  is_customizable: boolean;
+  is_personalizable: boolean;
+  personalization_is_required: boolean;
+  personalization_char_count_max: number | null;
+  personalization_instructions: string | null;
+  listing_type: string;
+  tags: string[];
+  materials: string[];
+  shipping_profile_id: number | null;
+  return_policy_id: number;
+  processing_min: number | null;
+  processing_max: number | null;
+  who_made: string;
+  when_made: string;
+  is_supply: boolean;
+  item_weight: number | null;
+  item_weight_unit: string | null;
+  item_length: number | null;
+  item_width: number | null;
+  item_height: number | null;
+  item_dimensions_unit: string | null;
+  is_private: boolean;
+  style: string[];
+  file_data: string;
+  has_variations: boolean;
+  should_auto_renew: boolean;
+  language: string;
+  price: Price;
+  taxonomy_id: number;
+  production_partners: string[];
+  skus: string[];
+  views: number;
+}

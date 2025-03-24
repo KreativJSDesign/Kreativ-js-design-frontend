@@ -1,0 +1,305 @@
+@import url(../css/fontFamily.css);
+
+:root {
+  --primary-color: #701bff;
+  --dark-primary-color: #530dc8;
+  --light-primary-color: #faf7ff;
+  --secondary-color: #1b1b1b;
+  --light-secondary-color: #333333;
+  --light-border-color: #c7d3e1;
+  --grey-color: #888888;
+  --grey-border-color: #e7e7e7;
+  --light-btn-bg: #f8fafb;
+  --darkgrey-btn-bg: #64748b;
+  --lightgrey-bg: #dbdfe0;
+  --white-color: #ffffff;
+  --lightblue-link-color: #559aee;
+  --active-color: #6dc347;
+  --inactive-color: #dc2626;
+  --littlesky-color: #2784f6;
+  --search-focus-color: #ffcdb2;
+  --dash-table-headerbg-colors: #f6f8fa;
+  --search-text-color: #595959;
+  --light-btn-shadow: 0px 4px 4px 0px #00000005;
+  --light-btn-shadow-inner: 0px 4px 4px 0px #00000005 inset;
+  --primary-btn-active: #cb2600;
+  --light-btn-hover: #f4f6f9;
+  --light-btn-border-hover: #e9eef3;
+  --white-color50: #ffffff80;
+  --black-color: #000;
+  --error-color: #d71818;
+  --choose-file-bg: #efefef;
+}
+
+body {
+  font-family: "Inter", serif;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+/* Common Styles */
+.logo-font {
+  font-family: "Tangerine", serif;
+}
+
+.main-container {
+  @apply min-h-screen bg-[var(--light-primary-color)] w-full md:grid items-center;
+}
+
+.logo {
+  @apply logo-font sm:text-6xl text-5xl text-center sm:mb-5 mb-3;
+}
+
+.form-container {
+  @apply rounded-xl bg-white mx-auto sm:p-8 p-6 border border-[var(--grey-border-color)] max-w-[450px] shadow-[var(--light-btn-shadow)];
+}
+
+.form-heading {
+  @apply font-semibold sm:text-xl text-lg sm:mb-5 mb-3;
+}
+
+.form-label {
+  @apply text-[var(--grey-color)];
+}
+
+.form-file-label {
+  @apply form-label cursor-pointer border sm:py-1.5 px-2.5 py-1 rounded-md border-[var(--light-border-color)] bg-[var(--choose-file-bg)] !text-[var(--secondary-color)] text-nowrap;
+}
+
+.form-control {
+  @apply mt-1.5 w-full border sm:h-12 h-10 px-3 rounded-[10px] border-[var(--light-border-color)] focus-visible:outline-0 focus-visible:border-[var(--primary-color)];
+}
+
+.form-file-control {
+  @apply form-control sm:!p-2 !p-1 text-sm file:rounded-md file:border-[--light-border-color] file:border-solid file:border file:bg-[--light-btn-bg] file:px-2.5 file:py-1 file:me-2 cursor-pointer;
+}
+
+.form-error-msg {
+  @apply text-[var(--error-color)] text-sm mt-1;
+}
+
+.ic-show-password {
+  @apply absolute right-3 cursor-pointer sm:top-5 top-4;
+}
+
+.primary-btn {
+  @apply sm:h-12 h-11 !bg-[var(--primary-color)] text-[var(--white-color)] font-semibold sm:text-lg text-base rounded-xl w-full cursor-pointer border border-[var(--dark-primary-color)] duration-500 hover:!bg-[var(--dark-primary-color)] active:!bg-[var(--dark-primary-color)] active:border-[var(--dark-primary-color)] disabled:!bg-[var(--dark-primary-color)] disabled:border-[var(--dark-primary-color)];
+}
+
+.light-btn {
+  @apply sm:h-12 h-11 !bg-[var(--light-btn-bg)] text-[--secondary-color] font-semibold sm:text-lg text-base rounded-xl w-full cursor-pointer border border-[var(--grey-border-color)] shadow-[var(--light-btn-shadow-inner)] duration-500 hover:!bg-[var(--light-btn-hover)] hover:border-[var(--light-btn-border-hover)] active:!bg-[var(--light-btn-hover)] active:border-[var(--light-btn-hover)] disabled:border-[var(--light-btn-bg)] disabled:text-[--grey-border-color];
+}
+
+.light-btn-admin {
+  @apply sm:h-12 h-11 text-[--secondary-color] font-semibold sm:text-lg text-base rounded-xl w-full cursor-pointer border border-[var(--grey-border-color)] shadow-[var(--light-btn-shadow-inner)] duration-500 hover:!bg-[var(--light-btn-hover)] hover:border-[var(--light-btn-border-hover)] active:!bg-[var(--light-btn-hover)] active:border-[var(--light-btn-hover)] disabled:border-[var(--light-btn-bg)] disabled:text-[--grey-border-color];
+}
+
+.text404 {
+  @apply md:text-3xl sm:text-2xl text-xl md:mt-7 mt-4 font-medium;
+}
+
+.modal {
+  @apply fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none p-5;
+}
+
+.modal-centered-dialog {
+  @apply pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px];
+}
+
+.modal-content {
+  @apply pointer-events-auto relative flex w-full flex-col rounded-xl border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark;
+}
+
+.modal-body {
+  @apply pt-8 pb-10 sm:px-8 px-6 text-center;
+}
+
+.modal-footer {
+  @apply grid grid-cols-2 gap-5 border-t border-[var(--grey-border-color)] sm:px-8 px-6 py-6;
+}
+
+.ic-form-select {
+  @apply absolute right-3 sm:top-5 top-4;
+}
+
+.scratch-card-heading {
+  @apply text-2xl py-8 sm:px-5 px-3 text-center font-medium bg-[var(--light-primary-color)] rounded-t-xl border-b border-[var(--light-border-color)];
+}
+
+.light-border-boxes {
+  @apply border border-[var(--light-border-color)] rounded-xl;
+}
+
+.get-card-heading {
+  @apply text-xl py-6 sm:px-5 px-3 text-center font-medium bg-[var(--light-primary-color)] rounded-t-xl border-b border-[var(--light-border-color)];
+}
+
+.get-cards-btn {
+  @apply text-[--primary-color] text-lg border p-4 w-full text-center rounded-xl font-semibold;
+}
+
+/* Admin Dashboard CSS */
+.table-search {
+  @apply placeholder:text-base placeholder:font-normal placeholder:text-[var(--search-text-color)] hover:border-[var(--light-btn-border-hover)] hover:bg-[var(--dash-table-headerbg-colors)] hover:cursor-pointer focus:text-black focus:outline-4 focus:outline-[#d6c2f9] focus:!bg-transparent !shadow-none relative m-0 block w-full sm:w-3/4 min-w-0 flex-auto rounded-lg border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-1 text-base font-normal leading-[1.6] outline-none transition duration-200 ease-in-out focus:z-[3] text-[var(--search-text-color)];
+}
+
+.selected-template {
+  @apply absolute sm:top-5  top-4 -rotate-[35deg] left-0 md:-translate-x-[32%] sm:-translate-x-[30%] -translate-x-[26%] lg:-translate-x-[22%] bg-white w-full border font-semibold text-[var(--littlesky-color)] border-[var(--littlesky-color)] text-center z-[29] sm:text-base text-sm;
+}
+
+.table-header-main {
+  @apply xl:w-full w-[90%] xl:max-w-[1246px] bg-white rounded-xl mt-1 px-3 sm:px-0 py-4 mx-auto;
+}
+
+.filter-btn {
+  @apply flex items-center whitespace-nowrap rounded-lg ps-3 pe-6 pb-2 pt-2 text-base leading-normal transition duration-150 ease-in-out bg-white hover:bg-primary-50 border;
+}
+
+.drop-headline {
+  @apply block w-full whitespace-nowrap bg-sky-50 cursor-text px-2 py-2 text-xs text-left font-semibold;
+}
+
+.drop-values {
+  @apply block w-full min-w-40 cursor-pointer whitespace-nowrap px-2 py-2 text-sm text-left font-normal pointer-events-auto text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:bg-neutral-100 focus:bg-neutral-100 focus:text-neutral-800 focus:outline-none active:no-underline dark:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600 dark:active:bg-neutral-600;
+}
+
+.sort-btn {
+  @apply flex items-center whitespace-nowrap rounded-lg ps-3 pe-6 pb-2 pt-2 text-base leading-normal transition duration-150 ease-in-out bg-white hover:bg-primary-50 border;
+}
+
+.export-btn {
+  @apply flex justify-center gap-4 ps-3 pe-4 pb-2 pt-2 bg-white hover:bg-primary-50 border rounded-lg;
+}
+
+.vt-link {
+  @apply flex vt items-center gap-8 transition duration-150 ease-in-out;
+}
+
+.template-selection {
+  @apply block w-full min-w-40 cursor-pointer whitespace-nowrap px-2 py-2 text-base text-left font-normal pointer-events-auto text-black hover:bg-[var(--light-btn-bg)];
+}
+
+.main-dash table tr td {
+  @apply font-medium text-base leading-6;
+}
+
+.main-dash table tr td {
+  @apply font-medium text-base leading-[24px];
+}
+
+.main-dash table tr td {
+  @apply font-medium text-base leading-[24px];
+}
+/* .main-dash table tr td.view-template span {
+  @apply text-[var(--lightblue-link-color)];
+} */
+
+.data-list {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+
+.main-dash {
+  @apply bg-[var(--lightgrey-bg)] min-h-screen pt-12 pb-24;
+}
+
+.main-dash .btn-grp button {
+  @apply bg-[var(--darkgrey-btn-bg)] text-[var(--white-color)] cursor-pointer rounded-[0.875rem] text-base py-3 px-5 text-nowrap;
+}
+
+.main-dash table thead {
+  @apply bg-[var(--light-btn-bg)];
+}
+
+.main-dash table thead th {
+  @apply text-nowrap;
+}
+
+.main-dash table thead th:last-child {
+  @apply text-center;
+}
+
+.main-dash table tbody tr {
+  @apply h-20;
+}
+
+.main-dash table tbody tr td:last-child {
+  @apply text-center;
+}
+
+.main-dash table tbody tr td button.vt {
+  @apply text-[var(--lightblue-link-color)];
+}
+
+.main-dash table tbody tr td.active span {
+  @apply w-3 h-3 bg-[var(--active-color)] rounded-full inline-block me-2;
+}
+
+.main-dash table tbody tr td.inactive span {
+  @apply w-3 h-3 bg-[var(--inactive-color)] rounded-full inline-block me-2;
+}
+
+.main-dash table tbody tr:nth-child(even) {
+  @apply bg-[var(--light-btn-bg)];
+}
+/* Admin Dashboard CSS */
+
+#scratch-sticker > div {
+  @apply !w-full;
+}
+
+#scratch-sticker > div > canvas {
+  @apply !w-full;
+}
+
+.loader-container {
+  @apply flex flex-col items-center justify-center text-center min-h-screen bg-[var(--light-primary-color)];
+}
+
+.loader {
+  @apply w-20 h-20 rounded-full border-8 border-solid border-[var(--light-primary-color)] border-t-[var(--primary-color)] border-e-[var(--dark-primary-color)];
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  @apply w-2 h-2 rounded-lg;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-[var(--white-color50)] rounded-lg;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-[var(--light-border-color)] rounded-lg;
+}
+
+.pagination-select .form-control {
+  @apply sm:w-24 w-20 !h-10 mt-0;
+}
+
+.pagination-select .ic-form-select {
+  @apply top-3;
+}
+
+/* Admin Loader CSS  */
+.admin-loader .loader-container {
+  @apply rounded-xl bg-[var(--lightgrey-bg)] min-h-[70vh];
+}
+
+@media screen and (max-width: 500px) {
+  /* .w-on-mob {
+    @apply w-[300px];
+  } */
+}

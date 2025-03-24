@@ -1,0 +1,130 @@
+/* Font Family Imports */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eater&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+/* Import for body */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Font Family Classes */
+.font-oswald {
+  font-family: "Oswald", serif;
+}
+
+.font-sigmar {
+  font-family: "Sigmar", serif;
+}
+
+.font-pt-sans {
+  font-family: "PT Sans", serif;
+}
+
+.font-grechen-fuemen {
+  font-family: "Grechen Fuemen", serif;
+}
+
+.font-phudu {
+  font-family: "Phudu", serif;
+}
+
+.font-delicious-handrawn {
+  font-family: "Delicious Handrawn", serif;
+}
+
+.font-sour-gummy {
+  font-family: "Sour Gummy", serif;
+}
+
+.font-emilys-candy {
+  font-family: "Emilys Candy", serif;
+}
+
+.font-schoolbell {
+  font-family: "Schoolbell", serif;
+}
+
+.font-fuzzy-bubbles {
+  font-family: "Fuzzy Bubbles", serif;
+}
+
+.font-tangerine {
+  font-family: "Tangerine", serif;
+}
+
+.font-bonheur-royale {
+  font-family: "Bonheur Royale", serif;
+}
+
+.font-windsong {
+  font-family: "WindSong", serif;
+}
+
+.font-island-moments {
+  font-family: "Island Moments", serif;
+}
+
+.font-barriecito {
+  font-family: "Barriecito", serif;
+}
+
+.font-kablammo {
+  font-family: "Kablammo", serif;
+}
+
+.font-rubik-distressed {
+  font-family: "Rubik Distressed", serif;
+}
+
+.font-moo-lah {
+  font-family: "Moo Lah Lah", serif;
+}
+
+.font-henny-penny {
+  font-family: "Henny Penny", serif;
+}
+
+.font-chewy {
+  font-family: "Chewy", serif;
+}
+
+.font-eater {
+  font-family: "Eater", serif;
+}
+
+.font-londrina-shadow {
+  font-family: "Londrina Shadow", serif;
+}
+
+.font-orbitron {
+  font-family: "Orbitron", serif;
+}
+
+.font-bruno-ace {
+  font-family: "Bruno Ace", serif;
+}
+
+.font-shadows-into-light {
+  font-family: "Shadows Into Light", serif;
+}
