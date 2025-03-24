@@ -337,9 +337,9 @@ const AdminDashboard = () => {
                         <th scope="col" className="py-4 px-5">
                           Price
                         </th>
-                        <th scope="col" className="py-4 px-5">
+                        {/* <th scope="col" className="py-4 px-5">
                           Discount Price
-                        </th>
+                        </th> */}
                         <th scope="col" className="py-4 px-5">
                           Date
                         </th>
@@ -367,7 +367,7 @@ const AdminDashboard = () => {
                               {convertEuroToDollar(product.price.amount / product.price.divisor) ??
                                 0}
                             </td>
-                            <td className="whitespace-nowrap py-4 px-5">$0</td>
+                            {/* <td className="whitespace-nowrap py-4 px-5">$0</td> */}
                             <td className="whitespace-nowrap py-4 px-5">
                               {product?.created_timestamp
                                 ? formatDate(product?.original_creation_timestamp)
