@@ -72,8 +72,7 @@ const AdminDashboard = () => {
         const date2 = new Date(b.original_creation_timestamp).getTime();
         return (date1 - date2) * sortDirection;
       });
-    }
-    
+    }    
     const { paginatedData, totalPages } = paginateData(
       updatedProducts,
       currentPage,
