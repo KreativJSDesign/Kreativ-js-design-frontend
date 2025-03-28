@@ -155,7 +155,7 @@ const CustomizeCard = () => {
   return (
     <>
       {/* Customization Interface Section Start */}
-      <section className="py-10">
+      <section className="py-5">
         <h1 className="logo">Kreativ JSdesign</h1>
         {error || !template?.backgroundUrl ? (
           <h2 className="form-error-msg text-center text-lg">
@@ -163,7 +163,7 @@ const CustomizeCard = () => {
             customization period has expired. Please check the URL again or contact the seller.
           </h2>
         ) : (
-          <div className="flex lg:flex-row flex-col xl:gap-x-14 gap-x-10 gap-y-10 md:mt-20 sm:mt-14 mt-10">
+          <div className="flex lg:flex-row flex-col xl:gap-x-14 gap-x-10 gap-y-10 md:mt-5 sm:mt-5 mt-5">
             <div className="2xl:!w-60 !w-40 xl:!block hidden"></div>
             <div>
               <div className="sticky top-5">
