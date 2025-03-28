@@ -47,7 +47,7 @@ body {
 }
 
 .logo {
-  @apply logo-font sm:text-6xl text-5xl text-center sm:mb-5 mb-3;
+  @apply logo-font sm:text-5xl text-4xl text-center sm:mb-5 mb-3;
 }
 
 .form-container {
