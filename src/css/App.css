@@ -298,7 +298,7 @@ body {
   @apply rounded-xl bg-[var(--lightgrey-bg)] min-h-[70vh];
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-height: 700px) {
   .h-on-mob {
     @apply h-screen;
   }
