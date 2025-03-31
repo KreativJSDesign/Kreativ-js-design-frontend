@@ -299,7 +299,7 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  /* .w-on-mob {
-    @apply w-[300px];
-  } */
+  .h-on-mob {
+    @apply h-screen;
+  }
 }
