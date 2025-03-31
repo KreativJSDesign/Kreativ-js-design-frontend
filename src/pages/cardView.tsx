@@ -87,7 +87,7 @@ const CardView = () => {
         ) : (
           <div className="flex lg:flex-row flex-col xl:gap-x-14 gap-x-10 gap-y-10 md:mt-5 sm:mt-5 mt-5">
             <div className="2xl:!w-60 !w-40 xl:!block hidden"></div>
-            <div className="max-w-lg mx-auto">
+            <div className="max-w-lg mx-auto max-h-screen">
               <div>
                 {cardData?.templateInfo?.backgroundUrl ? (
                   <div className="sticky top-5">
