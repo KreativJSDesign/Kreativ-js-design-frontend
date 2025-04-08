@@ -190,6 +190,7 @@ const CustomizeCard = () => {
                       fontWeight: `${headerState.fontWeight ?? ""}`,
                       color: `${headerState.fontColor}`,
                       textAlign: `${headerState.textAlignment}`,
+                      whiteSpace: "pre-line"
                     }}
                     translate="no"
                   >
@@ -204,6 +205,7 @@ const CustomizeCard = () => {
                       fontWeight: `${bodyState.fontWeight ?? ""}`,
                       color: `${bodyState.fontColor}`,
                       textAlign: `${bodyState.textAlignment}`,
+                      whiteSpace: "pre-line"
                     }}
                     translate="no"
                   >

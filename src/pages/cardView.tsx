@@ -88,7 +88,6 @@ const CardView = () => {
           <div className="flex lg:flex-row flex-col xl:gap-x-14 gap-x-10 gap-y-10 md:mt-5 sm:mt-5 mt-5">
             <div className="2xl:!w-60 !w-40 xl:!block hidden"></div>
             <div className="max-w-lg mx-auto h-on-mob">
-              
               <div>
                 {cardData?.templateInfo?.backgroundUrl ? (
                   <div className="sticky top-5">
@@ -114,6 +113,7 @@ const CardView = () => {
                               fontWeight: `${cardData?.customCardInfo?.cardHeader?.fontWeight ?? ""}`,
                               color: `${cardData?.customCardInfo?.cardHeader?.fontColor ?? ""}`,
                               textAlign: `${cardData?.customCardInfo?.cardHeader?.textAlignment ?? "center"}`,
+                              whiteSpace: "pre-line",
                             }}
                           >
                             {cardData?.customCardInfo?.cardHeader?.text}
@@ -127,6 +127,7 @@ const CardView = () => {
                               fontWeight: `${cardData?.customCardInfo?.cardBody?.fontWeight ?? ""}`,
                               color: `${cardData?.customCardInfo?.cardBody?.fontColor}`,
                               textAlign: `${cardData?.customCardInfo?.cardBody?.textAlignment ?? "center"}`,
+                              whiteSpace: "pre-line",
                             }}
                           >
                             {cardData?.customCardInfo?.cardBody?.text}
