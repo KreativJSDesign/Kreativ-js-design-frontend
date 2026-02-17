@@ -10,9 +10,6 @@
     "preview": "vite preview",
     "format": "prettier --write .",
     "check-format": "prettier --check ."
-  },
-  "engines": {
-  "node": "20.x"
 },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
@@ -25,9 +22,9 @@
     "js-cookie": "^3.0.5",
     "prettier": "^3.5.2",
     "qrcode": "^1.5.4",
-    "react": "18.2.0",
+    "react": "^19.0.0",
     "react-color": "^2.19.3",
-    "react-dom": "18.2.0",
+    "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
     "react-qr-code": "^2.0.15",
     "react-redux": "^9.2.0",
