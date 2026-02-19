@@ -78,7 +78,6 @@ const CardView = () => {
   return (
     <>
       <section className="py-5">
-        <h1 className="logo">Kreativ JSdesign</h1>
         {error || !cardData?.templateInfo ? (
           <h2 className="form-error-msg text-center text-lg">
             Error retrieving your card information. Please check the URL again or contact the

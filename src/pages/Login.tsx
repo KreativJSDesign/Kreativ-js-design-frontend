@@ -39,8 +39,6 @@ const Login = () => {
     <>
       <section className="main-container">
         <div className="md:pt-20 sm:pt-14 pt-10 px-5">
-          <h1 className="logo">Kreativ JSdesign</h1>
-
           <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
             <div className="sm:!mb-5 !mb-3">
               <h5 className="form-heading mb-0">Sign in to your account</h5>

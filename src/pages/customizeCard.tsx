@@ -5,6 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { initTWE, Modal, Ripple } from "tw-elements";
 import ColorPickerIcon from "../../public/static/img/icons/ic-color-picker.svg";
 import SelectDownArrow from "../../public/static/img/icons/ic-select.svg";
+import FontSelect from "../components/FontSelect";
 import Loader from "../components/loader";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
 import fonts from "../utils/fonts.json";
@@ -156,7 +157,6 @@ const CustomizeCard = () => {
     <>
       {/* Customization Interface Section Start */}
       <section className="py-5">
-        <h1 className="logo">Kreativ JSdesign</h1>
         {error || !template?.backgroundUrl ? (
           <h2 className="form-error-msg text-center text-lg">
             Error retrieving your card information. This URL may have already been used, or the card
@@ -252,32 +252,17 @@ const CustomizeCard = () => {
                         <label htmlFor="fontStyle" className="form-label">
                           Font Style
                         </label>
-                        <div className="relative">
-                          <select
-                            name="fontStyle"
-                            id="fontStyle"
-                            className="form-control appearance-none"
-                            value={headerState.fontStyle}
-                            onChange={(val) =>
-                              setHeaderState((prev) => ({
-                                ...prev,
-                                fontStyle: val.target.value,
-                              }))
-                            }
-                          >
-                            {fonts.map((font: string) => (
-                              <option key={font} value={font}>
-                                {font}
-                              </option>
-                            ))}
-                          </select>
-
-                          <img
-                            src={SelectDownArrow}
-                            alt="Select Down Arrow Icon"
-                            className="ic-form-select"
-                          />
-                        </div>
+                        <FontSelect
+                          fonts={fonts}
+                          value={headerState.fontStyle}
+                          onChange={(font) =>
+                            setHeaderState((prev) => ({
+                              ...prev,
+                              fontStyle: font,
+                            }))
+                          }
+                          id="fontStyle"
+                        />
                       </div>
 
                       <div className="mb-3">
@@ -435,32 +420,17 @@ const CustomizeCard = () => {
                         <label htmlFor="fontStyleBody" className="form-label">
                           Font Style
                         </label>
-                        <div className="relative">
-                          <select
-                            name="fontStyle"
-                            id="fontStyleBody"
-                            className="form-control appearance-none"
-                            value={bodyState.fontStyle}
-                            onChange={(val) =>
-                              setBodyState((prev) => ({
-                                ...prev,
-                                fontStyle: val.target.value,
-                              }))
-                            }
-                          >
-                            {fonts.map((font: string) => (
-                              <option key={font} value={font}>
-                                {font}
-                              </option>
-                            ))}
-                          </select>
-
-                          <img
-                            src={SelectDownArrow}
-                            alt="Select Down Arrow Icon"
-                            className="ic-form-select"
-                          />
-                        </div>
+                        <FontSelect
+                          fonts={fonts}
+                          value={bodyState.fontStyle}
+                          onChange={(font) =>
+                            setBodyState((prev) => ({
+                              ...prev,
+                              fontStyle: font,
+                            }))
+                          }
+                          id="fontStyleBody"
+                        />
                       </div>
 
                       <div className="mb-3">

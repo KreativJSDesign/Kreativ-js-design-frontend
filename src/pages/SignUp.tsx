@@ -11,8 +11,6 @@ const SignUp = () => {
       {/* Sign Up Section Start */}
       <section className="main-container">
         <div className="md:pt-20 sm:pt-14 pt-10 px-5">
-          <h1 className="logo">Kreativ JSdesign</h1>
-
           <form className="form-container">
             <h5 className="form-heading">Create your account</h5>
 
