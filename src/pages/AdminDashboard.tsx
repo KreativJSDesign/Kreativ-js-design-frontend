@@ -335,6 +335,9 @@ const AdminDashboard = () => {
                           Name
                         </th>
                         <th scope="col" className="py-4 px-5">
+                          Etsy Link
+                        </th>
+                        <th scope="col" className="py-4 px-5">
                           Price
                         </th>
                         {/* <th scope="col" className="py-4 px-5">
@@ -362,6 +365,20 @@ const AdminDashboard = () => {
                               {product.listing_id ?? ""}
                             </td>
                             <td className="min-w-80 py-4 px-5">{product.title ?? ""}</td>
+                            <td className="whitespace-nowrap py-4 px-5">
+                              {product.url ? (
+                                <a
+                                  href={product.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-[--lightblue-link-color] underline"
+                                >
+                                  View on Etsy
+                                </a>
+                              ) : (
+                                "—"
+                              )}
+                            </td>
                             <td className="whitespace-nowrap py-4 px-5">
                               $
                               {convertEuroToDollar(product.price.amount / product.price.divisor) ??
@@ -430,7 +447,7 @@ const AdminDashboard = () => {
                         ))}
                       {!currentProduct?.length && (
                         <tr>
-                          <td colSpan={8} className="text-center">
+                          <td colSpan={9} className="text-center">
                             No Product Found
                           </td>
                         </tr>
