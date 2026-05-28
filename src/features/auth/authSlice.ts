@@ -21,7 +21,7 @@ export const loginAdmin = createAsyncThunk(
   "auth/loginAdmin",
   async (data: LoginFormData, { rejectWithValue }) => {
     try {
-      const response = await api.post(`/admin/login`, data);
+      const response = await api.post(`/auth/admin/login`, data);
       Cookies.set("auth_token", response.data.token, { expires: 7 });
       return response.data.status === "success";
     } catch (error: any) {
