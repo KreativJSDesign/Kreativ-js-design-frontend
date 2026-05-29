@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -6,5 +7,5 @@ export default {
     "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   darkMode: "class",
-  plugins: [require("tw-elements/dist/plugin.cjs")],
+  plugins: [require("tw-elements/plugin.cjs")],
 };
