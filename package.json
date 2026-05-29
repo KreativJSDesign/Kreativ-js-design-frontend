@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "node api.js && vite",
+    "build": "node api.js && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write .",
     "check-format": "prettier --check ."
-},
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
     "@tailwindcss/vite": "^4.0.6",
